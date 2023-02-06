@@ -10,24 +10,38 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       background-color: rgb(187, 203, 216);
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
-      margin: 2% auto;
-      width: 30%;
-      height: 50%;
       background-color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      border-radius: 25px;
+      justify-content: center;
+      margin: 0 auto;
+      /* max-height: 100%; */
+      max-width: 360px;
+      border-radius: 5%;
     }
 
-    .body{
-      margin: 3%;
+    .image img {
+      border-radius: 25px;
+      height: 80vh;
+      width: 100%;
     }
 
     .container h4 {
@@ -43,10 +57,8 @@
       color: grey;
     }
 
-    .image img {
-      border-radius: 25px;
-      height: 90%;
-      width: 100%;
+    .body {
+      margin: 1em;
     }
   </style>
 </head>
