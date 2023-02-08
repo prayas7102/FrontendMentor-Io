@@ -16,6 +16,7 @@
 
     * {
       margin: 0;
+      box-sizing: border-box;
       padding: 0;
     }
 
@@ -27,43 +28,51 @@
       min-height: 100vh;
     }
 
-    .container{
+    .container {
       display: flex;
-      justify-content: center;
+      /* justify-content: center; */
       margin: 0 auto;
-      max-height: 40rem;
-      width: 50%;
+      height: 40rem;
+      max-width: 40rem;
       border-radius: 5%;
     }
-   
-    .container img{
-      max-height: 100%;
+    .container .image{
       width: 50%;
+      
+    }
+    .container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
 
-    .container .content{
+    .container .content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background-color: aliceblue;
       padding: 3em;
       width: 50%;
-      height: auto;
+      max-height: 100%;
     }
-    .content h1{
+
+    .content h1 {
       font-size: 150%;
       width: 100%;
     }
-    .content .price{
+
+    .content .price {
       width: 75%;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .price h3{
+
+    .price h3 {
       font-size: 150%;
     }
-    .content button{
+
+    .content button {
       padding: 1em;
     }
   </style>
@@ -71,8 +80,9 @@
 
 <body>
   <div class="container">
-
-    <img src="./images/image-product-desktop.jpg" alt="qrcode" />
+    <div class="image"> 
+      <img src="./images/image-product-desktop.jpg" alt="qrcode" />
+    </div>
 
     <div class="content">
 
@@ -94,4 +104,5 @@
 
   </div>
 </body>
+
 </html>
